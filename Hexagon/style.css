@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #262626;
+}
+
+.Hexagon {
+	width: 190px;
+	height: 109px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.Hexagon:before,
+.Hexagon:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+}
+
+.Hexagon:before {
+	animation:  beforePrint infinite 3s;
+}
+
+.Hexagon:after {
+	animation:  afterPrint infinite 3s;
+}
+
+.Hexagon,
+.Hexagon:before,
+.Hexagon:after {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+@keyframes beforePrint {
+	0% {
+		transform: rotate(15deg);
+	}
+	25% {
+		transform: rotate(30deg);	
+	}
+	50% {
+		transform: rotate(60deg);	
+	}
+	75% {
+		transform: rotate(60deg);	
+	}
+	100% {
+		transform: rotate(15deg);	
+	}
+
+}
+
+
+@keyframes afterPrint {
+	0% {
+		transform: rotate(-15deg);
+	}
+	25% {
+		transform: rotate(-30deg);	
+	}
+	50% {
+		transform: rotate(-60deg);	
+	}
+	75% {
+		transform: rotate(-60deg);	
+	}
+	100% {
+		transform: rotate(-15deg);	
+	}
+
+}
+
+span {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #292929;
+	border: solid .5px #fff;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+span:nth-child(1) {
+	top: -6px;
+	left: -6px;
+}
+
+span:nth-child(2) {
+	top: -6px;
+	right: -6px;
+}
+
+span:nth-child(3) {
+	bottom: -6px;
+	left: -6px;
+}
+
+span:nth-child(4) {
+	bottom: -6px;
+	right: -6px;
+}
+
+span:nth-child(5) {
+	top: -58px;
+	left: 48%;
+}
+
+span:nth-child(6) {
+	bottom: -58px;
+	left: 48%;
+}

@@ -1,0 +1,33 @@
+body {
+	margin:  0;
+	padding:  0;
+	background: #3070ff;
+}
+
+.container {
+	width: 500px;
+	height: 300px;
+	color: #fff;
+	position:  absolute;
+	top:  50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+.container:before {
+	content:  '';
+	position:  absolute;
+	width: 30px;
+	height: 30px;
+	bottom:  0;
+	left:  50%;
+	transform:  translateX(-50%) translateY(17px) rotate(45deg);
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	background: #3070ff;
+
+}

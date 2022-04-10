@@ -1,0 +1,55 @@
+body {
+	margin:  0;
+	padding: 0;
+	animation: bgcolor infinite 20s;
+}
+
+h1 {
+	margin:  0;
+	padding:  0;
+	font-family: arial;
+	font-size: 5em;
+	color:  #fff;
+	position: absolute;
+	top: 50%;
+	left:  50%;
+	transform:  translate(-50%, -50%);
+	text-align: center;
+	text-shadow: 1px 0 10px rgba(0,0,0,.5);
+}
+
+@keyframes bgcolor {
+	0% {
+		background:  #f3a683;
+	}
+	10% {
+		background:  #f7d794;
+	}
+	20% {
+		background: #778beb;
+	}
+	30% {
+		background: #e77f67;
+	}
+	40% {
+		background: #303952;
+	}
+	50% {
+		background: #f19066;
+	}
+	60% {
+		background: #f5cd79;
+	}
+	70% {
+		background: #546de5;
+	}
+	80% {
+		background: #63cdda;
+	}
+	90% {
+		background: #596275;
+	}
+	100% {
+		background: #3dc1d3;
+	}
+}

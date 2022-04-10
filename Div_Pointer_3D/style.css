@@ -1,0 +1,87 @@
+body {
+	margin:  0;
+	padding:  0;
+	background:  #b0ff30;
+}
+
+.container {
+	width: 500px;
+	height: 300px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #262626;
+	border-radius: 5px;
+	font-family: arial;
+	transition:  .5s;
+	animation: hoverswed infinite .9s;
+}
+
+@keyframes hoverswed {
+	0% {
+		transform: translate(-50%, -50%) skewY(-5deg);
+		box-shadow: -1px -1px 0 #444,
+					-2px -2px 0 #444,
+					-3px -3px 0 #444,
+					-4px -4px 0 #444,
+					-5px -5px 0 #444,
+					-6px -6px 0 #444;
+		}
+
+	50% {
+		transform: translate(-50%, -50%) skewY(0deg);
+		box-shadow: 0px -1px 0 #444,
+					0px -2px 0 #444,
+					0px -3px 0 #444,
+					0px -4px 0 #444,
+					0px -5px 0 #444,
+					0px -6px 0 #444;
+	}
+	
+	100% {
+		transform: translate(-50%, -50%) skewY(-5deg);
+		box-shadow: -1px -1px 0 #444,
+					-2px -2px 0 #444,
+					-3px -3px 0 #444,
+					-4px -4px 0 #444,
+					-5px -5px 0 #444,
+					-6px -6px 0 #444;
+	}
+}
+
+
+
+.container p {
+	margin: 0;
+	padding: 0;
+	color: #262626;
+}
+
+.container:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	position:  absolute;
+	bottom: 0;
+	left:  50%;
+	transform: translateX(-50%) translateY(16px) rotate(45deg);
+	border-bottom: 2px solid #262626;
+	border-right: 2px solid #262626;
+}
+
+.container:after {
+	content: '';
+	width: 100px;
+	height: 4px;
+	border-radius: 50%;
+	background: #000;
+	position:  absolute;
+	bottom: 0;
+	left:  50%;
+	transform: translateX(-50%) translateY(46px);
+	filter: blur(5px);
+}
