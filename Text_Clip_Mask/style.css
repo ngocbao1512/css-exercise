@@ -1,0 +1,19 @@
+body {
+	margin:  0;
+	padding:  0;
+	height:  200vh;
+}
+
+h1 {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12em;
+	text-align:  center;
+	margin: 250px auto;
+	text-transform: uppercase;
+	background: url(image.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

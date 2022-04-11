@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	background: #6d0000;
+	padding:  280px 0 0 500px;
+}
+.left,
+.right {
+	width: 100px;
+	height: 100px;
+	transition: .5s;
+	float: left;
+	box-shadow: -2px 2px 0 rgba(255, 255, 255, .5);
+}
+
+.left {
+	transform: rotate(45deg);
+	animation: toLeft infinite .5s;
+}
+
+.right {
+	transform: rotate(225deg);
+	animation: toRight infinite .5s;
+}
+
+@keyframes toLeft {
+	0% {
+		transform: rotate(45deg) translateY(0px);
+	}
+	50% {
+		transform:rotate(45deg) translateY(-25px);
+	}
+	100% {
+		transform: rotate(45deg) translateY(0px);
+	}
+}
+
+@keyframes toRight {
+	0% {
+		transform: rotate(225deg) translateX(0px);
+	}
+	50% {
+		transform:rotate(225deg) translateX(25px);
+	}
+	100% {
+		transform: rotate(225deg) translateX(0px);
+	}
+}

@@ -1,0 +1,49 @@
+body {
+	margin:  0;
+	padding: 0;
+	background: #00b928;
+}
+
+.Isometric {
+	width: 500px;
+	padding: 20px;
+	box-sizing:  border-box;
+	background: #00c32a;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-30deg) skew(30deg, 0deg);
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.Isometric p {
+	color: #02ff75;
+	font-size:  20px;
+	font-family: arial;
+	text-align: justify;
+}
+
+.Isometric h1 {
+	position: relative;
+	color: #fff;
+	font-size: 48px;
+	font-family:  arial;
+	text-align: justify;
+	transform-origin: bottom;
+	margin-bottom:  60px;
+	transform:  skew(-48deg);
+	text-shadow: -1px -1px 0 #ccc,-2px -2px 0 #ccc,-3px -3px 0 #ccc,-4px -4px 0 #ccc,-5px -5px 0 #ccc ;
+}
+
+.Isometric h1:before {
+	content:  'ISPMETRIC TEXT';
+	position: absolute;
+	color: rgba(0, 0, 0, .1);
+	font-size: 48px;
+	font-family:  arial;
+	text-align: justify;
+	transform:  skew(50deg) rotateX(180deg);
+	text-shadow: 0 0 10px rgba(0, 0, 0, .06); ;
+	top:  35px;
+	left:  21px;
+}
